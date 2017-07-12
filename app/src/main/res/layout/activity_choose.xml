@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="presenter"
+            type="com.example.xiaojie.poem.UI.ChooseActivity.presenter"
+            />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="sina接口"
+                android:onClick="@{presenter.sinaOnclick}"
+                android:textSize="30sp" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ibm接口"
+                android:onClick="@{presenter.ibmOnclick}"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
